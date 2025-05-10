@@ -7,11 +7,11 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-const basename = process.env.NODE_ENV === 'production' ? '/Portfolio' : '/';
+// const basename = process.env.NODE_ENV === 'production' ? '/Portfolio' : '/';
 
 function App() {
  return (
- <Router basename="/Portfolio">
+ <Router>
 <Navbar />
 <div className="page-content">
 <Routes>
