@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Projects Section */
+.projects-section {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Left Section - Project List */
+.projects-left {
+  width: 50%;
+  padding: 80px 40px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.projects-left h1 {
+  font-size: 36px;
+  color: #e63946;
+  margin-bottom: 30px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.25);
+}
+
+/* Right Section - Video */
+.projects-right {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-right video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === Modal === */
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+  color: #333;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #e63946;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin: 10px 0 20px;
+}
+
+.modal-content button {
+  background-color: #e63946;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #c7323e;
+}
+.projects-right video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* Ensures the video is centered */
+}
