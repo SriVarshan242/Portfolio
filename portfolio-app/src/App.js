@@ -8,20 +8,20 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 function App() {
-  return (
-    <Router>
-      <Navbar />
-      <div className="page-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
-    </Router>
-  );
+ return (
+ <Router basename="/Portfolio">
+<Navbar />
+<div className="page-content">
+<Routes>
+<Route path="/" element={<Home />} />
+<Route path="/about" element={<About />} />
+<Route path="/skills" element={<Skills />} />
+<Route path="/projects" element={<Projects />} />
+<Route path="/contact" element={<Contact />} />
+</Routes>
+</div>
+ </Router>
+ );
 }
 
 export default App;
