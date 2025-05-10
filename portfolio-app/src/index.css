@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@media (max-width: 1024px) {
+
+  .about-container {
+    padding: 50px 20px;
+  }
+
+  .projects-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .projects-left,
+  .projects-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-info {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .home-overlay h1 {
+    font-size: 40px;
+  }
+
+  .home-overlay p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .about-container {
+    padding: 20px;
+  }
+
+  .intro h1 {
+    font-size: 28px;
+  }
+
+  .projects-section {
+    flex-direction: column;
+  }
+
+  .projects-left,
+  .projects-right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    display: none; 
+  }
+
+  .cta-button {
+    font-size: 16px;
+  }
+
+  .social-link {
+    font-size: 20px;
+  }
+}
